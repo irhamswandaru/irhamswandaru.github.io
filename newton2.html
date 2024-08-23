@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hukum Newton 2</title>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="icon" href="logo.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background: linear-gradient(to right, #001c97, #092341);
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: white;
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .results-container {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .output-box {
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            padding: 8px 12px;
+            margin-top: 5px;
+            min-height: 40px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #backToTopBtn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #002954;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            z-index: 1000;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #backToTopBtn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-group-toggle {
+            display: flex;
+            width: 100%;
+        }
+
+        .btn-group-toggle .btn {
+            width: 100%;
+        }
+
+        .btn-outline-primary {
+            color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+        .btn-group .btn {
+            width: 100%;
+        }
+
+        .img-fluid {
+            border: 2px solid black;
+            width: 700px;
+            height: 300px;
+        }
+
+        @media (min-width: 768px) {
+            #backToTopBtn {
+                right: 40px;
+                bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo" style="height: 30px; margin-right: 10px;">Newton
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sejarah.html">Sejarah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton1.html">Newton 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton2.html">Newton 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton3.html">Newton 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanmassa.html">Satuan Massa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanpanjang.html">Satuan Panjang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 animate-scale-up">
+                <div class="container">
+                    <h5>Contoh Newton 2</h5>
+                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                        <video class="embed-responsive-item" controls>
+                            <source src="videonewton2.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card animate-slide-in-right">
+                    <div class="card-body">
+                        <h5>Pengertian Newton 2</h5>
+                        <p class="text-justify">Sebuah benda dengan massa m mengalami gaya resultan sebesar F akan
+                            mengalami percepatan (a)
+                            yang arahnya sama dengan arah gaya, dan besarnya berbanding lurus terhadap F dan berbanding
+                            terbalik terhadap massa (m).</p>
+                        <div class="mt-5">
+                            <h5> Newton 2</h5>
+                        </div>
+                        <img src="rumusnewton2.png" style="width: 150px;" alt="Rumus Newton 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card animate-slide-in-left">
+                        <div class="card-body">
+                            <h5 class="card-title">Penjelasan Gambar Newton 2</h5>
+                            <p class="card-text text-justify">Dalam ilustrasi newton 2 ini, seorang pria tampak
+                                mendorong lemari pakaian besar. Aksi mendorong lemari menggambarkan aplikasi gaya (F).
+                                Gaya yang diberikan oleh pria tersebut akan menyebabkan lemari bergerak (mengalami
+                                percepatan), yang besarnya bergantung pada massa lemari tersebut. Jika lemari memiliki
+                                massa yang besar, maka diperlukan lebih banyak gaya untuk menggerakkannya dengan
+                                percepatan yang sama dibandingkan dengan objek yang lebih ringan. Gambar ini secara
+                                efektif menunjukkan interaksi antara gaya, massa, dan percepatan, memperjelas konsep
+                                dasar dari Hukum Gerak Newton yang kedua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-scale-up">
+                    <h5 class="card-title">Contoh Gambar Newton 2</h5>
+                    <img src="contohnewton2.png" alt="Contoh Newton 2" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-3">
+            <div class="card animate-slide-in-right">
+                <div class="card-body">
+                    <h5 class="card-title">Perhitungan Hukum Newton 2</h5>
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <button id="calculateAcceleration" class="btn btn-primary btn-block">Hitung a
+                                (Percepatan)</button>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <button id="calculateMass" class="btn btn-primary btn-block">Hitung m (Massa)</button>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <button id="calculateForce" class="btn btn-primary btn-block">Hitung F (Gaya)</button>
+                        </div>
+                    </div>
+                    <div id="inputArea" style="display: none;">
+                        <div class="form-group">
+                            <input type="number" id="input1" class="form-control mb-2" placeholder="Masukkan F (N)">
+                            <div id="massInput" class="btn-group btn-group-toggle mb-2" data-toggle="buttons">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label class="btn btn-secondary active" style="width: 100%;">
+                                            <input type="radio" name="massUnit" id="kg" autocomplete="off" checked>
+                                            kg
+                                        </label>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="btn btn-secondary" style="width: 100%;">
+                                            <input type="radio" name="massUnit" id="mg" autocomplete="off"> mg
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="number" id="input2" class="form-control mb-2"
+                                placeholder="Masukkan m (sesuai satuan)">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button id="calculateButton" class="btn btn-success btn-block mb-2">Hitung</button>
+                            </div>
+                            <div class="col-6">
+                                <button id="resetButton" class="btn btn-danger btn-block">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results-container mt-2" id="calculationResult" style="display: none;">
+                        <h5>Total Gaya</h5>
+                        <div class="output-box mt-2" id="resultOutput"></div>
+                        <h5>Cara Mengerjakan</h5>
+                        <div class="output-box mt-2" id="calculationSteps"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Kesalahan Input</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Masukkan nilai yang valid dan pastikan tidak bernilai 0
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full z-50 text-sm"
+        onclick="scrollToTop()" style="width: 50px; height: 50px;">
+        ↑
+    </button>
+
+    <footer class="navbar-custom text-light py-3 text-center" style="margin-top: auto;">
+        Created by <a href="#" data-toggle="modal" data-target="#teamModal" class="text-reset font-weight-bold">Kelompok
+            2</a> <br> Universitas Islam Negeri Raden Intan Lampung, email : humas@radenintan.ac.id, telepon : 0721
+        780887
+    </footer>
+
+    <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamModalLabel">ANGGOTA KELOMPOK 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    M. IRHAM SWANDARU<br>
+                    FIKI FADILA<br>
+                    PUSPITA DEWI<br>
+                    SITI NURHASANAH
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="animate.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const inputArea = document.getElementById('inputArea');
+        const calculationResult = document.getElementById('calculationResult');
+        const resultOutput = document.getElementById('resultOutput');
+        const calculationSteps = document.getElementById('calculationSteps');
+        const calculateAccelerationBtn = document.getElementById('calculateAcceleration');
+        const calculateMassBtn = document.getElementById('calculateMass');
+        const calculateForceBtn = document.getElementById('calculateForce');
+        const resetButton = document.getElementById('resetButton');
+        const input1 = document.getElementById('input1');
+        const input2 = document.getElementById('input2');
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        const navbar = document.querySelector('.navbar');
+        const massInput = document.getElementById('massInput'); // Container for mass unit choices
+
+        // Prepare UI and activate input based on the chosen calculation
+        function prepareCalculation(type) {
+            resetCalculation();  // Reset state before starting a new calculation
+            inputArea.style.display = 'block';
+            calculationResult.style.display = 'none';  // Hide results initially
+
+            // Set placeholders based on calculation type
+            input1.placeholder = type === 'a' ? 'Masukkan F (N)' : (type === 'm' ? 'Masukkan F (N)' : 'Masukkan a (m/s²)');
+            input2.placeholder = type === 'a' ? 'Masukkan m (kg)' : (type === 'm' ? 'Masukkan a (m/s²)' : 'Masukkan m (kg)');
+
+            // Display mass input for 'a' and 'f' calculations
+            massInput.style.display = (type === 'a' || type === 'f') ? 'block' : 'none';
+
+            // Enable and disable buttons accordingly
+            calculateAccelerationBtn.disabled = type !== 'a';
+            calculateMassBtn.disabled = type !== 'm';
+            calculateForceBtn.disabled = type !== 'f';
+
+            // Assign appropriate functions to the "Calculate" button based on the type
+            document.getElementById('calculateButton').onclick = function () {
+                if (type === 'a') calculateAcceleration();
+                else if (type === 'm') calculateMass();
+                else if (type === 'f') calculateForce();
+            };
+        }
+
+        // Reset all inputs and outputs
+        function resetCalculation() {
+            input1.value = '';
+            input2.value = '';
+            resultOutput.textContent = '';
+            calculationSteps.textContent = '';
+            inputArea.style.display = 'none';
+            calculationResult.style.display = 'none';
+            calculateAccelerationBtn.disabled = false;
+            calculateMassBtn.disabled = false;
+            calculateForceBtn.disabled = false;
+        }
+
+        // Calculate acceleration
+        function calculateAcceleration() {
+            const force = parseFloat(input1.value);
+            const massOriginal = parseFloat(input2.value);
+            const massUnit = document.querySelector('input[name="massUnit"]:checked').id;
+            const mass = massUnit === 'mg' ? massOriginal / 1000000 : massOriginal;
+            const acceleration = force / mass;
+            showResult(acceleration, `a = F/m = ${force} N / ${massOriginal} ${massUnit} = ${acceleration.toFixed()} m/s²`);
+        }
+
+        // Calculate mass
+        function calculateMass() {
+            const force = parseFloat(input1.value);
+            const acceleration = parseFloat(input2.value);
+            const mass = force / acceleration;
+            showResult(mass, `m = F/a = ${force} N / ${acceleration} m/s² = ${mass.toFixed()} kg`);
+        }
+
+        // Calculate force
+        function calculateForce() {
+            const acceleration = parseFloat(input1.value);
+            const massOriginal = parseFloat(input2.value);
+            const massUnit = document.querySelector('input[name="massUnit"]:checked').id;
+            const mass = massUnit === 'mg' ? massOriginal / 1000000 : massOriginal;
+            const force = acceleration * mass;
+            showResult(force, `F = a × m = ${acceleration} m/s² × ${massOriginal} ${massUnit} = ${force.toFixed()} N`);
+        }
+
+        // Show results and calculation steps
+        function showResult(result, steps) {
+            resultOutput.textContent = result.toFixed();
+            calculationSteps.textContent = steps;
+            calculationResult.style.display = 'block';
+        }
+
+        // Add event listeners to buttons
+        calculateAccelerationBtn.addEventListener('click', function () { prepareCalculation('a'); });
+        calculateMassBtn.addEventListener('click', function () { prepareCalculation('m'); });
+        calculateForceBtn.addEventListener('click', function () { prepareCalculation('f'); });
+        resetButton.addEventListener('click', resetCalculation);
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function () {
+            const navbarHeight = navbar.offsetHeight;
+
+            if (window.pageYOffset > navbarHeight) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+
+        backToTopBtn.onclick = scrollToTop;
+    });
+</script>
+
+
+</html>

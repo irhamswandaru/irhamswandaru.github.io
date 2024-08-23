@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+    #backToTopBtn {
+        right: 40px;
+        bottom: 40px;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-scale-up {
+    animation: scaleUp 1s ease-out forwards;
+}
+
+footer {
+    background: linear-gradient(to right, #001c97, #092341);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}

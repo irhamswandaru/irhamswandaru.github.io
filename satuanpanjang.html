@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton</title>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="icon" href="logo.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background: linear-gradient(to right, #001c97, #092341);
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: white;
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        #backToTopBtn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #002954;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            z-index: 1000;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #backToTopBtn:hover {
+            background-color: #0056b3;
+        }
+
+        .result-box {
+            border: 1px solid #ccc;
+            padding: 8px;
+            margin-top: 5px;
+            background-color: #f8f8f8;
+        }
+
+
+        @media (min-width: 768px) {
+            #backToTopBtn {
+                right: 40px;
+                bottom: 40px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo" style="height: 30px; margin-right: 10px;">Newton
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sejarah.html">Sejarah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton1.html">Newton 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton2.html">Newton 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton3.html">Newton 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanmassa.html">Satuan Massa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanpanjang.html">Satuan Panjang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 animate-scale-up">
+                <a href="https://youtu.be/z0ovdf21fgQ?si=MiA4CdL2k12Bydzn" target="_blank">
+                    <img src="satuanpanjang.png" alt="satuan panjang" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-md-6 animate-slide-in-right">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Konsep Panjang</h5>
+                        <p class="card-text text-justify">Satuan panjang adalah ukuran yang digunakan untuk mengukur
+                            jarak atau lebar suatu objek, dan biasanya dinyatakan dalam meter (m) dalam sistem metrik.
+                            Konsep ini pertama kali diperkenalkan dalam konteks ilmiah oleh para ilmuwan pada berbagai
+                            periode sejarah, tetapi sistem satuan panjang modern mengacu pada definisi resmi yang
+                            dikembangkan pada abad ke-18. Konsep ini berakar pada pemahaman bahwa jarak antara dua titik
+                            dalam ruang dapat diukur dengan tingkat presisi tertentu. Seperti halnya dengan massa,
+                            satuan panjang menunjukkan sifat intrinsik dari objek dalam ruang. Meskipun gravitasi tidak
+                            memengaruhi panjang objek, konsep ini memainkan peran penting dalam pemahaman tentang
+                            dimensi fisik dan geometri. Sebagai contoh, saat bergerak di ruang, panjang suatu objek
+                            tetap konstan, tetapi perubahan dalam dimensi dapat diamati dalam konteks relativitas. Ini
+                            menegaskan perbedaan antara satuan panjang, yang menunjukkan dimensi fisik suatu objek, dan
+                            faktor-faktor lain seperti percepatan gravitasi atau kecepatan relatif yang dapat
+                            memengaruhi persepsi kita terhadap ruang dan jarak.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-3">
+            <div class="card animate-slide-in-left">
+                <div class="card-body text-justify">
+                    <h5 class="card-title">Konversi Panjang</h5>
+                    <div class="row mb-3">
+                        <div class="col-12 mb-2">
+                            <button type="button" class="btn btn-info btn-block" data-toggle="modal"
+                                data-target="#conversionModal" data-unit="km">Kilometer (km)</button>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button type="button" class="btn btn-info btn-block" data-toggle="modal"
+                                data-target="#conversionModal" data-unit="hm">Hektometer (hm)</button>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button type="button" class="btn btn-info btn-block" data-toggle="modal"
+                                data-target="#conversionModal" data-unit="dam">Dekameter (dam)</button>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button type="button" class="btn btn-info btn-block" data-toggle="modal"
+                                data-target="#conversionModal" data-unit="m">Meter (m)</button>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button type="button" class="btn btn-info btn-block" data-toggle="modal"
+                                data-target="#conversionModal" data-unit="dm">Desimeter (dm)</button>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button type="button" class="btn btn-info btn-block" data-toggle="modal"
+                                data-target="#conversionModal" data-unit="cm">Centimeter (cm)</button>
+                        </div>
+                        <div class="col-12 mb-2">
+                            <button type="button" class="btn btn-info btn-block" data-toggle="modal"
+                                data-target="#conversionModal" data-unit="mm">Milimeter (mm)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <button id="backToTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full z-50 text-sm"
+        onclick="scrollToTop()" style="width: 50px; height: 50px;">
+        ↑
+    </button>
+    <footer class="navbar-custom text-light py-3 text-center" style="margin-top: auto;">
+        Created by <a href="#" data-toggle="modal" data-target="#teamModal" class="text-reset font-weight-bold">Kelompok
+            2</a> <br> Universitas Islam Negeri Raden Intan Lampung, email : humas@radenintan.ac.id, telepon : 0721
+        780887
+    </footer>
+
+    <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamModalLabel">ANGGOTA KELOMPOK 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    M. IRHAM SWANDARU<br>
+                    FIKI FADILA<br>
+                    PUSPITA DEWI<br>
+                    SITI NURHASANAH
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="conversionModal" tabindex="-1" role="dialog" aria-labelledby="conversionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="conversionModalLabel">Konversi Panjang</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="number" class="form-control mb-2" id="lengthInput" placeholder="Masukkan nilai"
+                        aria-label="Masukkan nilai">
+                    <button class="btn btn-info" id="calculateButton">Hitung</button>
+                    <div id="conversionResult"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="animate.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        $('#conversionModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var unit = button.data('unit'); 
+            var modal = $(this);
+            modal.find('.modal-title').text('Konversi ' + unit);
+            modal.find('#lengthInput').attr('placeholder', 'Masukkan nilai dalam ' + unit).val('');
+            modal.find('#conversionResult').html('');
+        });
+
+        $('#calculateButton').on('click', function () {
+            var modal = $('#conversionModal');
+            var value = parseFloat(modal.find('#lengthInput').val());
+            if (isNaN(value)) {
+                modal.find('#conversionResult').html('Silakan masukkan nilai yang valid.');
+                return;
+            }
+            var results = getConversionResults(value, modal.find('.modal-title').text().split(' ')[1]);
+            modal.find('#conversionResult').html(results);
+        });
+
+        function getConversionResults(value, unit) {
+            const factor = {
+                km: 1, hm: 10, dam: 100, m: 1000, dm: 10000, cm: 100000, mm: 1000000
+            };
+            var results = '';
+            Object.keys(factor).forEach(u => {
+                if (u !== unit) {
+                    var convertedValue = value * (factor[u] / factor[unit]);
+                    results += `<div class='result-box'>${formatNumber(convertedValue)} ${u} </div>`;
+                }
+            });
+            return results;
+        }
+
+        function formatNumber(num) {
+            return num % 1 === 0 ? num.toString() : num.toFixed(6).replace(/(?:\.0+|(\.\d+?)0+)$/, '$1');
+        }
+
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        const navbar = document.querySelector('.navbar');
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function () {
+            const navbarHeight = navbar.offsetHeight;
+
+            if (window.pageYOffset > navbarHeight) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+
+        backToTopBtn.onclick = scrollToTop;
+    });
+</script>
+
+
+
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hukum Newton 3</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background: linear-gradient(to right, #001c97, #092341);
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: white;
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .results-container {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .output-box {
+            background-color: #ffffff;
+            border: 1px solid #ececec;
+            padding: 0.5rem;
+            margin-top: 5px;
+            min-height: 40px;
+        }
+
+        .output-box>div {
+            min-height: 34px;
+            display: flex;
+            align-items: center;
+            padding-left: 0.75rem;
+        }
+
+        .img-fluid {
+            border: 2px solid black;
+        }
+
+        #backToTopBtn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #002954;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            z-index: 1000;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #backToTopBtn:hover {
+            background-color: #0056b3;
+        }
+
+        @media (min-width: 768px) {
+            #backToTopBtn {
+                right: 40px;
+                bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo" style="height: 30px; margin-right: 10px;">Newton
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sejarah.html">Sejarah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton1.html">Newton 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton2.html">Newton 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton3.html">Newton 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanmassa.html">Satuan Massa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanpanjang.html">Satuan Panjang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 animate-scale-up">
+                <div class="container">
+                    <h5>Contoh Newton 3</h5>
+                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                        <video class="embed-responsive-item" controls>
+                            <source src="videonewton3.mp4" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card animate-slide-in-right">
+                    <div class="card-body">
+                        <h5>Pengertian Newton 3</h5>
+                        <p class="text-justify">Setiap ada gaya aksi yang bekerja pada suatu benda, maka akan timbul
+                            gaya reaksi yang
+                            besarnya sama, tetapi arahnya berlawanan.</p>
+                        <div class="mt-5">
+                            <h5>Rumus Newton 3</h5>
+                        </div>
+                        <img src="rumusnewton3.png" style="width: 200px;" alt="Rumus Newton 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card animate-slide-in-left">
+                        <div class="card-body">
+                            <h5 class="card-title">Penjelasan Gambar Newton 3</h5>
+                            <p class="card-text text-justify">Dalam ilustrasi newton 3 ini, ketika perenang mendorong
+                                air ke belakang dengan tangan atau kaki mereka, air mendorong balik perenang ke arah
+                                yang berlawanan. Ini adalah reaksi dari aksi mendorong air tersebut. Dengan demikian,
+                                perenang dapat bergerak ke depan melalui air. Gerakan mereka ke depan adalah hasil dari
+                                gaya reaksi air yang mendorong mereka ke arah yang berlawanan dari gaya yang mereka
+                                aplikasikan pada air. Gambar ini dengan jelas menggambarkan perenang dalam berbagai fase
+                                dorongan terhadap air, dimana setiap dorongan memberikan mereka percepatan melalui air
+                                berkat prinsip aksi-reaksi yang digambarkan oleh Hukum Ketiga Newton.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-scale-up">
+                    <h5 class="card-title">Contoh Gambar Newton 3</h5>
+                    <img src="contohnewton3.png" alt="Contoh Newton 3" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-3">
+            <div class="card animate-slide-in-right">
+                <div class="card-body">
+                    <h5 class="card-title">Perhitungan Hukum Newton 3</h5>
+                    <form id="newtonForm">
+                        <div class="form-group text-justify">
+                            <label for="forceAction">Masukkan Gaya Aksi Untuk Menghitung Gaya Reaksi atau Gaya Reaksi
+                                Untuk Menghitung Gaya Aksi</label>
+                            <input type="number" id="forceAction" class="form-control" placeholder="Masukkan gaya (N)"
+                                required>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="button" onclick="calculateReaction()"
+                                    class="btn btn-success btn-block">Hitung
+                                    Reaksi</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" onclick="calculateAction()"
+                                    class="btn btn-success btn-block">Hitung
+                                    Aksi</button>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <button type="button" onclick="resetCalculation()"
+                                    class="btn btn-danger btn-block">Reset</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                    <div class="results-container">
+                        <h5>Hasil Perhitungan</h5>
+                        <div class="output-box mb-3">
+                            <label for="resultAction"><strong>Gaya Aksi</strong></label>
+                            <div id="resultAction" class="border p-2"></div>
+                        </div>
+                        <div class="output-box">
+                            <label for="resultReaction"><strong>Gaya Reaksi</strong></label>
+                            <div id="resultReaction" class="border p-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="backToTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full z-50 text-sm"
+        onclick="scrollToTop()" style="width: 50px; height: 50px;">
+        ↑
+    </button>
+    <footer class="navbar-custom text-light py-3 text-center" style="margin-top: auto;">
+        Created by <a href="#" data-toggle="modal" data-target="#teamModal" class="text-reset font-weight-bold">Kelompok
+            2</a> <br> Universitas Islam Negeri Raden Intan Lampung, email : humas@radenintan.ac.id, telepon : 0721
+        780887
+    </footer>
+    <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamModalLabel">ANGGOTA KELOMPOK 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    M. IRHAM SWANDARU<br>
+                    FIKI FADILA<br>
+                    PUSPITA DEWI<br>
+                    SITI NURHASANAH
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="animate.js"></script>
+<script>
+    function calculateReaction() {
+        var force = parseFloat(document.getElementById('forceAction').value);
+        var reactionForce = -force;
+        document.getElementById('resultAction').textContent = force + ' N';
+        document.getElementById('resultReaction').textContent = reactionForce + ' N';
+        document.querySelector('.results-container').style.display = 'block';
+    }
+
+    function calculateAction() {
+        var force = parseFloat(document.getElementById('forceAction').value);
+        var actionForce = -force;
+        document.getElementById('resultAction').textContent = actionForce + ' N';
+        document.getElementById('resultReaction').textContent = force + ' N';
+        document.querySelector('.results-container').style.display = 'block';
+    }
+
+    function resetCalculation() {
+        document.getElementById('forceAction').value = '';
+        document.getElementById('resultAction').textContent = '';
+        document.getElementById('resultReaction').textContent = '';
+        document.querySelector('.results-container').style.display = 'none';
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        const navbar = document.querySelector('.navbar');
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.onscroll = function () {
+            const navbarHeight = navbar.offsetHeight;
+
+            if (window.pageYOffset > navbarHeight) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        };
+
+        backToTopBtn.onclick = scrollToTop;
+    });
+
+</script>
+
+</html>

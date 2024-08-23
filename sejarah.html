@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton</title>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="icon" href="logo.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-custom {
+            background: linear-gradient(to right, #001c97, #092341);
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+
+        .navbar-custom .navbar-brand {
+            color: white;
+        }
+
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        #backToTopBtn {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #002954;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            z-index: 1000;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #backToTopBtn:hover {
+            background-color: #0056b3;
+        }
+
+        @media (min-width: 768px) {
+            #backToTopBtn {
+                right: 40px;
+                bottom: 40px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo" style="height: 30px; margin-right: 10px;">Newton
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sejarah.html">Sejarah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton1.html">Newton 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton2.html">Newton 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="newton3.html">Newton 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanmassa.html">Satuan Massa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="satuanpanjang.html">Satuan Panjang</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 animate-scale-up">
+                <a href="https://youtu.be/w45U3DGQ9Tw?si=b8B6Wb5SLJw67Qrl" target="_blank">
+                    <img src="apel.png" alt="Isaac Newton" class="img-fluid" style="width: 1000px;">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <div class="card animate-slide-in-right">
+                    <div class="card-body">
+                        <h5 class="card-title">Sejarah Tercipta Ide Hukum Newton</h5>
+                        <p class="card-text text-justify">Sejarah terciptanya ide-ide Newton merupakan hasil dari
+                            kombinasi unik dari ketekunan, kreativitas, dan kecerdasan yang luar biasa. Pada masa muda
+                            di Trinity College, Cambridge, Newton mulai menunjukkan minat yang mendalam dalam matematika
+                            dan fisika, meskipun awalnya tidak menonjol sebagai seorang jenius. Namun, ketika terpaksa
+                            tinggal di rumah selama wabah besar yang melanda London pada tahun 1665-1666, Newton
+                            menemukan kesempatan emas untuk mengeksplorasi pemikirannya tanpa batasan waktu atau
+                            gangguan dari dunia luar. Periode ini, yang dikenal sebagai "annus mirabilis" atau tahun
+                            keajaiban, menyaksikan lahirnya gagasan-gagasan revolusioner Newton, termasuk kalkulus dan
+                            teori optik, yang menjadi landasan bagi banyak perkembangan ilmiah berikutnya.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 mb-3">
+            <div class="card animate-slide-in-left">
+                <div class="card-body text-justify">
+                    <h5 class="card-title">Sejarah Ikonik Tentang Newton</h5>
+                    <pc class="card-text">Cerita yang paling ikonik adalah insiden di kebun apelnya, di mana Newton
+                        mengamati sebuah apel jatuh dari pohonnya dan mempertanyakan alasan mengapa apel itu jatuh
+                        secara vertikal ke bawah. Pertanyaan sederhana ini mendorongnya untuk memikirkan fenomena
+                        gravitasi, yang kemudian mengarah pada pengembangan teori gravitasi. Sejarah terciptanya ide
+                        Newton menunjukkan bahwa kadang-kadang inspirasi datang dari pengamatan sehari-hari yang
+                        sederhana, namun dibutuhkan ketekunan dan kecerdasan untuk mengubahnya menjadi konsep ilmiah
+                        yang revolusioner.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="backToTopBtn"
+        class="hidden fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded-full z-50 text-sm"
+        onclick="scrollToTop()" style="width: 50px; height: 50px;">
+        ↑
+    </button>
+    <footer class="navbar-custom text-light py-3 text-center" style="margin-top: auto;">
+        Created by <a href="#" data-toggle="modal" data-target="#teamModal" class="text-reset font-weight-bold">Kelompok
+            2</a> <br> Universitas Islam Negeri Raden Intan Lampung, email : humas@radenintan.ac.id, telepon : 0721
+        780887
+    </footer>
+
+    <div class="modal fade" id="teamModal" tabindex="-1" role="dialog" aria-labelledby="teamModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamModalLabel">ANGGOTA KELOMPOK 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    M. IRHAM SWANDARU<br>
+                    FIKI FADILA<br>
+                    PUSPITA DEWI<br>
+                    SITI NURHASANAH
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="animate.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            const navbar = document.querySelector('.navbar');
+            const newtonCard = document.querySelector('.card.animate-slide-in-right');
+            newtonCard.classList.add('animate-slide-in-right');
+
+            const hukumNewtonCard = document.querySelector('.card.animate-slide-in-left');
+            hukumNewtonCard.classList.add('animate-slide-in-left');
+
+            const newtonImage = document.querySelector('.img-fluid.animate-scale-up');
+            newtonImage.classList.add('animate-scale-up');
+
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            window.onscroll = function () {
+                const navbarHeight = navbar.offsetHeight;
+
+                if (window.pageYOffset > navbarHeight) {
+                    backToTopBtn.style.display = 'block';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            };
+
+            backToTopBtn.onclick = scrollToTop;
+        });
+
+    </script>
+</body>
+
+</html>
